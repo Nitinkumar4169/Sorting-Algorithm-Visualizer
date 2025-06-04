@@ -1,0 +1,28 @@
+body {
+  background: #f8f9fa;
+}
+.bars-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 350px;
+  border: 1px solid #dee2e6;
+  background: #fff;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.bar {
+  margin: 0 1px;
+  background: #007bff;
+  width: 100%;
+  transition: height 0.2s, background 0.1s;
+}
+.bar.comparing {
+  background: #ffc107;
+}
+.bar.swapping {
+  background: #e83e8c;
+}
+.bar.sorted {
+  background: #28a745;
+}

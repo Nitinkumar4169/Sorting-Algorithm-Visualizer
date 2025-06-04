@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Algorithm Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Sorting Algorithm Visualizer</h1>
+    <div class="row mb-4">
+      <div class="col-md-3 mb-2">
+        <select id="algorithm" class="form-control">
+          <option value="bubble">Bubble Sort</option>
+          <option value="selection">Selection Sort</option>
+          <option value="quick">Quick Sort</option>
+          <option value="merge">Merge Sort</option>
+        </select>
+      </div>
+      <div class="col-md-2 mb-2">
+        <button id="newArray" class="btn btn-info btn-block">New Array</button>
+      </div>
+      <div class="col-md-2 mb-2">
+        <button id="start" class="btn btn-success btn-block">Start</button>
+      </div>
+      <div class="col-md-3 mb-2">
+        <input type="range" id="sizeSlider" class="custom-range" min="10" max="100" value="50">
+        <small>Array Size: <span id="sizeValue">50</span></small>
+      </div>
+      <div class="col-md-2 mb-2">
+        <input type="range" id="speedSlider" class="custom-range" min="10" max="200" value="50">
+        <small>Speed: <span id="speedValue">50</span>ms</small>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-4 mb-2">
+        <input type="text" id="userArrayInput" class="form-control"
+          placeholder="Enter comma-separated numbers (optional)">
+      </div>
+      <div class="col-md-2 mb-2">
+        <button id="setUserArray" class="btn btn-secondary btn-block">Set Array</button>
+      </div>
+    </div>
+    <div id="bars" class="bars-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
